@@ -37,33 +37,29 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-second {
-  padding-top: 0;
-}
+
 .title {
   color: var(--black-title);
 }
 
-.list,
-.main-nav,
-.flex-container {
-  display: flex;
-}
-
 .list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.flex-content {
-  flex-wrap: wrap;
-  gap: 30px;
+
+.btn{
+  font-family: inherit;
+  cursor: pointer;
 }
+
 
 .list .item:not(:last-child) {
   margin-right: 50px;
 }
 .main-nav {
+  display: flex;
   align-items: center;
 }
 .list-contact {
@@ -143,7 +139,7 @@ img {
 .hero {
   text-align: center;
 }
-.hero-image {
+.hero__image {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -157,7 +153,7 @@ img {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   color: var(--white);
   font-weight: 900;
@@ -169,21 +165,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-btn {
+.hero__btn {
   border-width: 0;
   display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 216px;
   color: var(--white);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--blue);
-  cursor: pointer;
+  background-color: var(--blue); 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -199,7 +193,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.credo-icon {
+.benefits__block {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -209,32 +203,42 @@ img {
   justify-content: center;
   border-radius: 4px;
 }
-.credo-icon-size {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
-.credo-title {
+.benefits__title {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.credo-text {
+.benefits__description {
   line-height: 1.71;
 }
-.flex-container {
+.benefits__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.credo-item {
+.benefits__item {
   flex-basis: calc((100%- 3 * 30px) / 4);
   max-width: 270px;
 }
-.project {
+
+.projects {
+  padding-top: 0;
+}
+.projects__list {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects__image {
   position: relative;
 }
-.project-block {
+.projects__block {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -245,13 +249,19 @@ img {
   justify-content: center;
   align-items: center;
 }
-.project-title {
+.projects__description {
   display: inline-flex;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
+}
+.projects__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team {
   background: var(--bg-white);
