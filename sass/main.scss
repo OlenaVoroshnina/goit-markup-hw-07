@@ -1,8 +1,6 @@
-@import "./utils/variables.scss";
-@import "./base/reset";
-@import "./components/container";
-@import "./components/section";
+@import "./utils/variables";
 @import "./utils/hidden";
+@import "./base/reset";
 @import "./layout/header";
 @import "./layout/logo";
 @import "./layout/body";
@@ -15,3 +13,5 @@
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./components/modal";
+@import "./components/container";
+@import "./components/section";
